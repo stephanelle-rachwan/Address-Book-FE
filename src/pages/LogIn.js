@@ -14,8 +14,10 @@ const LogIn = () => {
       });
       const data = await res.json();
       console.log(data);
+      localStorage.setItem("token", data["token"]);
       window.location.href = "/contacts";
     } catch (error) {
+      console.log(error);
       alert("wrong data");
     }
   }
