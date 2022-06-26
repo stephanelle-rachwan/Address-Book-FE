@@ -5,7 +5,12 @@ const DisplayContacts = () => {
   return (
     <div>
       <div className="title-table flex-cont">
-        <h2>Contacts</h2>
+        <h2 className="title-mini">Contacts</h2>
+        <input
+          className="search-bar"
+          type="text"
+          placeholder="Search.."
+        ></input>
         <button className="add-btn">Add Contact</button>
       </div>
 
@@ -18,7 +23,6 @@ const DisplayContacts = () => {
               <th>Relationship Status</th>
               <th>Email</th>
               <th>Location</th>
-              {/* <th></th> */}
             </tr>
           </thead>
           <tbody>
