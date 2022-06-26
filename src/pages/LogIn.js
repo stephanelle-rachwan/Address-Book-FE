@@ -1,13 +1,11 @@
 import React from "react";
 
 const LogIn = () => {
-  // return <div>hii</div>;
-
   return (
-    <div class="login">
+    <div className="login">
       <h1> Log In </h1>
-      <form class="login-form" id="login">
-        <div class="input-box">
+      <form className="login-form">
+        <div className="input-box">
           <input
             type="email"
             placeholder="Email address*"
@@ -15,7 +13,7 @@ const LogIn = () => {
             required
           ></input>
         </div>
-        <div class="input-box">
+        <div className="input-box">
           <input
             type="password"
             placeholder="Password*"
@@ -23,12 +21,12 @@ const LogIn = () => {
             required
           ></input>
         </div>
-        <button type="button" class="login-btn" id="submit">
+        <button type="button" className="login-btn">
           {" "}
           Log In{" "}
         </button>
       </form>
-      <p class="login-text">
+      <p className="login-text">
         Don't have an account?<a href="Register"> Register now.</a>
       </p>
     </div>

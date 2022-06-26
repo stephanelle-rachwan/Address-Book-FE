@@ -12,7 +12,7 @@ const Navbar = () => {
           <li>
             <a href="register"> Register</a>
             <a href="login"> Log In</a>
-            <a href="logout"> Log Out</a>
+            <a href="login"> Log Out</a>
           </li>
         </ul>
       </div>
