@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddContacts = () => {
-  return <div>AddContacts</div>;
+  return <div>Add Contacts</div>;
 };
 
 export default AddContacts;

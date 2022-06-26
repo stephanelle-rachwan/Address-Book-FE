@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import LogIn from "./pages/LogIn";
 import Register from "./pages/Register";
 import EditContacts from "./pages/EditContacts";
@@ -8,6 +9,7 @@ import AddContacts from "./pages/AddContacts";
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="login" element={<LogIn />}></Route>
         <Route path="register" element={<Register />}></Route>
