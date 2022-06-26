@@ -22,8 +22,7 @@ const LogIn = () => {
           ></input>
         </div>
         <button type="button" className="login-btn">
-          {" "}
-          Log In{" "}
+          Log In
         </button>
       </form>
       <p className="login-text">

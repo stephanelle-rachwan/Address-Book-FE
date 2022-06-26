@@ -192,6 +192,46 @@ input {
   justify-content: space-around;
 }
 
+/* Adding contact form */
+.add-cntct {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #fcf9f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  background-color: #fcf9f3;
+}
+
+.add-cntct > h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #245551;
+}
+
+.add-cntct-form {
+  margin: 20px;
+}
+
+.add-cntct-btn {
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  background-color: #245551;
+  color: #d3dddc;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-cntct-btn:hover {
+  background-color: #4f7673;
+  color: #d3dddc;
+}
+
 /* ============================================================================= */
 
 @media only screen and (max-width: 810px) {
