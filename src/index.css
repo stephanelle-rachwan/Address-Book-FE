@@ -192,8 +192,9 @@ input {
   justify-content: space-around;
 }
 
-/* Adding contact form */
-.add-cntct {
+/* Adding and editing contact form */
+.add-cntct,
+.edit-cntct {
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
@@ -203,18 +204,21 @@ input {
   background-color: #fcf9f3;
 }
 
-.add-cntct > h1 {
+.add-cntct > h1,
+.edit-cntct > h1 {
   margin: 20px;
   text-align: center;
   font-size: 22px;
   color: #245551;
 }
 
-.add-cntct-form {
+.add-cntct-form,
+.edit-cntct-form {
   margin: 20px;
 }
 
-.add-cntct-btn {
+.add-cntct-btn,
+.edit-cntct-btn {
   font-size: 18px;
   width: 100%;
   font-weight: bold;
@@ -227,9 +231,26 @@ input {
   margin-top: 10px;
 }
 
-.add-cntct-btn:hover {
+.add-cntct-btn:hover,
+.edit-cntct-btn:hover {
   background-color: #4f7673;
   color: #d3dddc;
+}
+
+.add-map,
+.edit-map {
+  font-weight: bold;
+  background-color: #245551;
+  color: #d3dddc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.loc {
+  display: flex;
+  width: 100%;
 }
 
 /* ============================================================================= */
