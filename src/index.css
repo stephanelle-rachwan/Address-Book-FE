@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #fcf9f3;
+}
+
+/* Navigation */
+.logo > a {
+  color: #fcf9f3;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fcf9f3;
+  padding: 0 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #245551;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  width: 50%;
+  padding: 0 40px;
+}
+
+.nav-list a {
+  color: #fcf9f3;
+  padding: 0px 20px;
+}
+
+.nav-list a:hover {
+  color: #333;
+}
+
+@media only screen and (max-width: 810px) {
+  nav {
+    justify-content: center;
+  }
+  .nav-list {
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0;
+  }
+  .logo > a {
+    font-size: 18px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  nav {
+    justify-content: center;
+  }
+  .nav-list {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 0;
+  }
+  .logo > a {
+    font-size: 17px;
+    display: block;
+  }
+}
