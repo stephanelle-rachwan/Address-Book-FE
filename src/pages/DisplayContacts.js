@@ -4,6 +4,23 @@ import jwt_decode from "jwt-decode";
 
 const DisplayContacts = () => {
   const [contacts, setContacts] = useState([]);
+  async function delContact(number) {
+    try {
+      const res = await fetch(
+        `http://localhost:3000/api/user?phoneNumber=${number}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+          },
+        }
+      );
+      const data = await res.json();
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   useEffect(() => {
     const test = async () => {
       try {
@@ -60,7 +77,15 @@ const DisplayContacts = () => {
                   <td>{e.relationStatus}</td>
                   <td>{e.email}</td>
                   <td>{[e.latitude, " , ", e.longitude]}</td>
-                  <td>
+                  <td
+                    onClick={(e) => {
+                      delContact(
+                        e.target.parentElement.parentElement.children[1]
+                          .innerText
+                      );
+                      window.location.href = "/contacts";
+                    }}
+                  >
                     <AiOutlineDelete />
                   </td>
                   <td>
