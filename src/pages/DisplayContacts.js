@@ -20,12 +20,11 @@ const DisplayContacts = () => {
       console.log(error);
     }
   }
-
+  let token = jwt_decode(localStorage.getItem("token"));
+  token = token["_id"];
   useEffect(() => {
     const test = async () => {
       try {
-        let token = jwt_decode(localStorage.getItem("token"));
-        token = token["_id"];
         // console.log(token["_id"]);
         const res = await fetch("http://localhost:3000/api/user", {
           method: "POST",
@@ -93,7 +92,12 @@ const DisplayContacts = () => {
                   >
                     <AiOutlineDelete />
                   </td>
-                  <td>
+                  <td
+                    onClick={(e) => {
+                      localStorage.setItem("user_id", token);
+                      window.location.href = "/contacts/edit";
+                    }}
+                  >
                     <AiOutlineEdit />
                   </td>
                 </tr>
