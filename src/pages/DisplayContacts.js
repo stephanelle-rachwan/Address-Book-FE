@@ -54,7 +54,12 @@ const DisplayContacts = () => {
           type="text"
           placeholder="Search.."
         ></input>
-        <button className="add-btn">Add Contact</button>
+        <button
+          className="add-btn"
+          onClick={(e) => (window.location.href = "contacts/add")}
+        >
+          Add Contact
+        </button>
       </div>
 
       <div>
