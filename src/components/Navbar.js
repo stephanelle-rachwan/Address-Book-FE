@@ -12,7 +12,14 @@ const Navbar = () => {
           <li>
             <a href="register"> Register</a>
             <a href="login"> Log In</a>
-            <a href="login"> Log Out</a>
+            <a
+              href="login"
+              onClick={(e) => {
+                localStorage.clear();
+              }}
+            >
+              Log Out
+            </a>
           </li>
         </ul>
       </div>
